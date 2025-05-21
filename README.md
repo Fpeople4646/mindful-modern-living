@@ -61,9 +61,6 @@ npm run dev
 
 The app will be available at `http://localhost:3000`.
 
-## 📡 Edit Online via Lovable.dev
-
-This project is editable on [Lovable.dev](https://lovable.dev/projects/ba73c26c-80c7-482e-a870-6a75bf112afc). You can modify the UI using a no-code/low-code interface, and changes will sync directly with this repository.
 
 ## 🤝 Contributing
 
