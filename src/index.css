@@ -1,71 +1,44 @@
 
+```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 220 20% 96%; /* Light Cool Gray */
-    --foreground: 220 15% 25%; /* Dark Slate Blue */
+    /* Dark theme colors */
+    --background: 220 15% 12%; /* Darker Blue/Gray */
+    --foreground: 220 10% 88%; /* Lighter Grayish Blue */
 
-    --card: 0 0% 100%; /* White */
-    --card-foreground: 220 15% 25%; /* Dark Slate Blue */
+    --card: 220 15% 18%; /* Slightly lighter than background for cards */
+    --card-foreground: 220 10% 88%;
 
-    --popover: 0 0% 100%; /* White */
-    --popover-foreground: 220 15% 25%; /* Dark Slate Blue */
+    --popover: 220 15% 18%;
+    --popover-foreground: 220 10% 88%;
 
-    --primary: 210 70% 50%; /* Vibrant Blue */
-    --primary-foreground: 0 0% 98%; /* Almost White */
+    --primary: 210 70% 55%; /* Vibrant Blue - kept for accent */
+    --primary-foreground: 220 15% 10%; /* Very dark for text on primary */
 
-    --secondary: 145 50% 60%; /* Soft Teal/Green */
-    --secondary-foreground: 220 15% 25%; /* Dark Slate Blue */
+    --secondary: 30 90% 55%; /* A strong, fiery orange/gold for "hard" feel */
+    --secondary-foreground: 220 15% 10%; /* Very dark for text on secondary */
 
-    --muted: 220 15% 90%; /* Lighter Cool Gray */
-    --muted-foreground: 220 10% 45%; /* Medium Slate Blue */
+    --muted: 220 15% 25%; /* Muted dark blue/gray */
+    --muted-foreground: 220 10% 65%; /* Lighter muted text */
 
-    --accent: 210 70% 50%; /* Vibrant Blue - can be same as primary or different */
-    --accent-foreground: 0 0% 98%; /* Almost White */
+    --accent: 0 70% 55%; /* Strong Red for accents / destructive actions */
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 70% 55%; /* Soft Red */
-    --destructive-foreground: 0 0% 98%; /* Almost White */
-
-    --border: 220 15% 88%; /* Light Gray Blue Border */
-    --input: 220 15% 88%; /* Light Gray Blue Input Background */
-    --ring: 210 70% 50%; /* Vibrant Blue Ring */
-
-    --radius: 0.75rem; /* Slightly larger radius for modern feel */
-  }
-
-  .dark {
-    /* Define dark mode colors if needed in future, for now stick to light */
-    --background: 220 15% 15%;
-    --foreground: 220 10% 85%;
-
-    --card: 220 15% 20%;
-    --card-foreground: 220 10% 85%;
-
-    --popover: 220 15% 20%;
-    --popover-foreground: 220 10% 85%;
-
-    --primary: 210 70% 55%;
-    --primary-foreground: 220 15% 10%;
-
-    --secondary: 145 50% 50%;
-    --secondary-foreground: 220 10% 85%;
-
-    --muted: 220 15% 25%;
-    --muted-foreground: 220 10% 65%;
-
-    --accent: 210 70% 55%;
-    --accent-foreground: 220 15% 10%;
-
-    --destructive: 0 60% 50%;
+    --destructive: 0 70% 50%; /* Consistent Red */
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 30%;
-    --input: 220 15% 30%;
-    --ring: 210 70% 55%;
+    --border: 220 15% 30%; /* Darker border */
+    --input: 220 15% 22%; /* Dark input background */
+    --ring: 210 70% 55%; /* Vibrant Blue Ring - consistent with primary */
+
+    --radius: 0.5rem; /* Slightly smaller radius for a sharper feel */
   }
+
+  /* Removed .dark block as :root now contains dark theme variables */
 }
 
 @layer base {
@@ -74,7 +47,7 @@
   }
   body {
     @apply bg-background text-foreground font-sans;
-    font-feature-settings: "cv02", "cv03", "cv04", "cv11"; /* For better Open Sans or similar font rendering */
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-semibold text-foreground;
@@ -92,6 +65,8 @@
   }
 
   .card-style {
-    @apply bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow;
+    /* bg-card is now dark, shadow might need adjustment for dark themes */
+    @apply bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-border;
   }
 }
+```

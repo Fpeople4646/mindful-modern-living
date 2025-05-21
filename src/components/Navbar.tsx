@@ -1,8 +1,9 @@
 
+```tsx
 import { Link, NavLink } from "react-router-dom";
-import { Leaf, Menu, X } from "lucide-react";
+import { Leaf, Menu, X, Zap } from "lucide-react"; // Changed Leaf to Zap for a "harder" feel
 import { useState } from "react";
-import { Button } from "@/components/ui/button"; // Assuming you have a shadcn Button
+import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { title: "Beranda", href: "/" },
@@ -16,11 +17,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-card/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+    <nav className="bg-card/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-border">
       <div className="content-container flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center text-primary hover:text-primary/80 transition-colors">
-          <Leaf className="h-8 w-8 mr-2" />
-          <span className="text-2xl font-bold">Sehat Disiplin</span>
+          <Zap className="h-8 w-8 mr-2 text-secondary" /> {/* Using Zap icon and secondary color */}
+          <span className="text-2xl font-bold">Disiplin Baja</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -52,7 +53,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-card shadow-lg absolute w-full">
+        <div className="md:hidden bg-card shadow-lg absolute w-full border-b border-border">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
               <NavLink
@@ -78,3 +79,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+```
