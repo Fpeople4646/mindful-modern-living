@@ -1,5 +1,4 @@
 
-```tsx
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner"; // Re-enabled Sonner import
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -37,4 +36,3 @@ const App = () => (
 );
 
 export default App;
-```

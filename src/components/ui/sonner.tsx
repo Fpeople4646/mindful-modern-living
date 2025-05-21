@@ -1,5 +1,4 @@
 
-```tsx
 // import { useTheme } from "next-themes" // Removed next-themes
 import * as SonnerPackage from "sonner" // Changed to namespace import
 
@@ -32,4 +31,3 @@ const Toaster = ({ ...props }: ToasterProps) => {
 const toast = SonnerPackage.toast;
 
 export { Toaster, toast }
-```
