@@ -1,5 +1,4 @@
 
-```typescript
 import React from 'react';
 import { CalendarDays, Zap, Coffee, Bed, BookOpen, Dumbbell, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -76,4 +75,3 @@ const RencanaHarianPage = () => {
 };
 
 export default RencanaHarianPage;
-```

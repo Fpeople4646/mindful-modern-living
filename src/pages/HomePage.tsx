@@ -1,5 +1,4 @@
 
-```typescript
 import MotivationalQuote from "@/components/MotivationalQuote";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -55,4 +54,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-```

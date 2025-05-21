@@ -1,5 +1,4 @@
 
-```typescript
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X, Zap, CalendarDays } from "lucide-react"; // Added CalendarDays for new page
 import { useState } from "react";
@@ -80,4 +79,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-```
