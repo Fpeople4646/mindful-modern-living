@@ -23,3 +23,56 @@ The goal of this application is to provide users with an interface that promotes
 
 ## 📁 Project Structure
 
+```
+mindful-modern-living/
+├── public/                 # Static assets
+├── src/                    # Source code
+│   └── index.ts            # App entry point
+├── components.json         # Component definitions for Lovable.dev
+├── index.html              # HTML entry point
+├── tailwind.config.ts      # Tailwind CSS configuration
+├── tsconfig.json           # TypeScript configuration
+├── vite.config.ts          # Vite build configuration
+└── package.json            # Project dependencies and scripts
+```
+
+## ⚙️ Getting Started
+
+To run the project locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Fpeople4646/mindful-modern-living.git
+cd mindful-modern-living
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:3000`.
+
+## 📡 Edit Online via Lovable.dev
+
+This project is editable on [Lovable.dev](https://lovable.dev/projects/ba73c26c-80c7-482e-a870-6a75bf112afc). You can modify the UI using a no-code/low-code interface, and changes will sync directly with this repository.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit a pull request with your improvements.
+
+## 📄 License
+
+This project is currently not licensed. For usage and modification rights, please contact the repository owner.
+
+---
+
+**GitHub:** [Fpeople4646/mindful-modern-living](https://github.com/Fpeople4646/mindful-modern-living)
