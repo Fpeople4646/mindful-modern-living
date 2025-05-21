@@ -1,11 +1,11 @@
 
 import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
+// import { Toaster as Sonner } from "@/components/ui/sonner"; // Dikomentari karena ada error pada file sonner.tsx (read-only)
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout"; // Import Layout
-import HomePage from "./pages/HomePage"; // Import HomePage
+import Layout from "./components/Layout";
+import HomePage from "./pages/HomePage";
 import RoutinePage from "./pages/RoutinePage";
 import HabitsPage from "./pages/HabitsPage";
 import WorkoutsPage from "./pages/WorkoutsPage";
@@ -17,11 +17,11 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Toaster />
-      <Sonner />
+      <Toaster /> {/* Ini adalah toaster standar dari shadcn/ui */}
+      {/* <Sonner /> */} {/* Penggunaan Sonner dikomentari untuk sementara */}
       <BrowserRouter>
         <Routes>
-          <Route element={<Layout />}> {/* Wrap routes with Layout */}
+          <Route element={<Layout />}>
             <Route path="/" element={<HomePage />} />
             <Route path="/rutinitas" element={<RoutinePage />} />
             <Route path="/kebiasaan" element={<HabitsPage />} />

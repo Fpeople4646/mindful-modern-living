@@ -1,5 +1,6 @@
 
-```tsx
+import React from 'react';
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
       <div className="content-container">
         <p>&copy; {currentYear} Disiplin Baja. Semua hak dilindungi.</p>
         <p className="text-sm mt-1">
-          Dibangun dengan <span className="text-secondary">🔥</span> oleh Lovable. {/* Changed heart to fire */}
+          Dibangun dengan <span className="text-secondary">🔥</span> oleh Lovable.
         </p>
       </div>
     </footer>
@@ -15,4 +16,3 @@ const Footer = () => {
 };
 
 export default Footer;
-```
