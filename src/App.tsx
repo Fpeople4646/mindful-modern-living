@@ -1,6 +1,7 @@
 
+```tsx
 import { Toaster } from "@/components/ui/toaster";
-// import { Toaster as Sonner } from "@/components/ui/sonner"; // Dikomentari karena ada error pada file sonner.tsx (read-only)
+import { Toaster as Sonner } from "@/components/ui/sonner"; // Re-enabled Sonner import
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -18,7 +19,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster /> {/* Ini adalah toaster standar dari shadcn/ui */}
-      {/* <Sonner /> */} {/* Penggunaan Sonner dikomentari untuk sementara */}
+      <Sonner /> {/* Re-enabled Sonner component */}
       <BrowserRouter>
         <Routes>
           <Route element={<Layout />}>
@@ -36,3 +37,4 @@ const App = () => (
 );
 
 export default App;
+```

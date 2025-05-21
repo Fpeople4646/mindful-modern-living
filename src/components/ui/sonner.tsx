@@ -1,15 +1,15 @@
 
 ```tsx
 // import { useTheme } from "next-themes" // Removed next-themes
-import { Toaster as SonnerPrimitive, toast } from "sonner" // Renamed to avoid conflict
+import * as SonnerPackage from "sonner" // Changed to namespace import
 
-type ToasterProps = React.ComponentProps<typeof SonnerPrimitive>
+type ToasterProps = React.ComponentProps<typeof SonnerPackage.Toaster>
 
 const Toaster = ({ ...props }: ToasterProps) => {
   // const { theme = "system" } = useTheme() // Removed useTheme
 
   return (
-    <SonnerPrimitive
+    <SonnerPackage.Toaster // Use Toaster from the namespace
       theme={"dark" as ToasterProps["theme"]} // Set theme to "dark"
       className="toaster group"
       toastOptions={{
@@ -27,6 +27,9 @@ const Toaster = ({ ...props }: ToasterProps) => {
     />
   )
 }
+
+// Make the toast function from the sonner package available for export
+const toast = SonnerPackage.toast;
 
 export { Toaster, toast }
 ```
