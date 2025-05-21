@@ -1,12 +1,14 @@
 
+```typescript
 import { Link, NavLink } from "react-router-dom";
-import { Menu, X, Zap } from "lucide-react"; // Removed Leaf as it's not used, kept Zap
+import { Menu, X, Zap, CalendarDays } from "lucide-react"; // Added CalendarDays for new page
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { title: "Beranda", href: "/" },
   { title: "Rutinitas", href: "/rutinitas" },
+  { title: "Rencana Harian", href: "/rencana-harian" }, // New Nav Link
   { title: "Kebiasaan", href: "/kebiasaan" },
   { title: "Olahraga", href: "/olahraga" },
   { title: "Nutrisi", href: "/nutrisi" },
@@ -19,8 +21,8 @@ const Navbar = () => {
     <nav className="bg-card/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-border">
       <div className="content-container flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center text-primary hover:text-primary/80 transition-colors">
-          <Zap className="h-8 w-8 mr-2 text-secondary" /> {/* Using Zap icon and secondary color */}
-          <span className="text-2xl font-bold">Disiplin Baja</span>
+          <Zap className="h-8 w-8 mr-2 text-secondary" />
+          <span className="text-2xl font-bold">Ritme Harian</span> {/* Changed App Name */}
         </Link>
 
         {/* Desktop Nav */}
@@ -78,3 +80,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+```

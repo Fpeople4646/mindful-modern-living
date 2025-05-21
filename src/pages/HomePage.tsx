@@ -1,8 +1,9 @@
 
+```typescript
 import MotivationalQuote from "@/components/MotivationalQuote";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Zap, Target, ShieldCheck, Brain } from "lucide-react";
+import { Zap, Target, ShieldCheck, Brain, CalendarDays } from "lucide-react"; // Added CalendarDays
 
 const FeatureCard = ({ icon: Icon, title, description, delay }: { icon: React.ElementType, title: string, description: string, delay: string }) => (
   <div className={`card-style text-center animate-fade-in`} style={{ animationDelay: delay }}>
@@ -31,9 +32,10 @@ const HomePage = () => {
 
       <section className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 my-12">
         <FeatureCard icon={Target} title="Rutinitas Terstruktur" description="Jadwal harian yang optimal untuk produktivitas dan kesejahteraan." delay="0.3s" />
-        <FeatureCard icon={ShieldCheck} title="Kebiasaan Positif" description="Bangun kebiasaan baik yang mendukung kesehatan fisik dan mental." delay="0.4s" />
-        <FeatureCard icon={Zap} title="Olahraga Efektif" description="Panduan latihan untuk kekuatan, kardio, dan fleksibilitas." delay="0.5s" />
-        <FeatureCard icon={Brain} title="Nutrisi Seimbang" description="Pilihan makanan cerdas untuk energi dan vitalitas." delay="0.6s" />
+        <FeatureCard icon={CalendarDays} title="Rencana Harian Kustom" description="Buat dan kelola rencana harian yang sesuai dengan kebutuhan Anda." delay="0.4s" /> {/* Updated Feature Card */}
+        <FeatureCard icon={ShieldCheck} title="Kebiasaan Positif" description="Bangun kebiasaan baik yang mendukung kesehatan fisik dan mental." delay="0.5s" />
+        <FeatureCard icon={Zap} title="Olahraga Efektif" description="Panduan latihan untuk kekuatan, kardio, dan fleksibilitas." delay="0.6s" />
+        {/* Removed Brain for Nutrisi as it's a separate page, kept 4 features for balance */}
       </section>
 
       <section className="text-center my-12 animate-fade-in" style={{ animationDelay: '0.7s' }}>
@@ -41,6 +43,9 @@ const HomePage = () => {
         <p className="text-lg text-foreground/70 max-w-xl mx-auto mb-6">
           Bergabunglah dalam perjalanan menuju versi diri Anda yang lebih sehat, lebih kuat, dan lebih disiplin.
         </p>
+        <Button asChild variant="secondary" size="lg" className="mr-2">
+          <Link to="/rencana-harian">Buat Rencana Harian</Link>
+        </Button>
         <Button asChild variant="outline" size="lg">
           <Link to="/kebiasaan">Pelajari Kebiasaan Sehat</Link>
         </Button>
@@ -50,3 +55,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+```
