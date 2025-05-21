@@ -1,5 +1,4 @@
 
-```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -69,4 +68,3 @@
     @apply bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-border;
   }
 }
-```

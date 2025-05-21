@@ -1,7 +1,6 @@
 
-```tsx
 import { Link, NavLink } from "react-router-dom";
-import { Leaf, Menu, X, Zap } from "lucide-react"; // Changed Leaf to Zap for a "harder" feel
+import { Menu, X, Zap } from "lucide-react"; // Removed Leaf as it's not used, kept Zap
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -79,4 +78,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-```
